@@ -1,12 +1,13 @@
+sing System;
+using Microsoft.Extensions.DependencyInjection;
+
 namespace CrossHealthX;
 
 public partial class App : Application
 {
-    public App()
+    public App(IServiceProvider services)
     {
         InitializeComponent();
-
-        // Запускаємо головну навігаційну оболонку
-        MainPage = new AppShell();
+        MainPage = services.GetRequiredService<AppShell>();
     }
 }
