@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui">
+
+    <!-- ===== COLORS ===== -->
+    <Color x:Key="PrimaryBlue">#3AA8F4</Color>
+    <Color x:Key="TextDark">#1A1A1A</Color>
+    <Color x:Key="TextLight">#777777</Color>
+    <Color x:Key="CardBorder">#E5E5E5</Color>
+    <Color x:Key="CardBackground">#FFFFFF</Color>
+
+    <!-- LABELS -->
+    <Style TargetType="Label" x:Key="TitleLarge">
+        <Setter Property="FontSize" Value="50"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="TextColor" Value="{StaticResource TextDark}"/>
+    </Style>
+
+    <Style TargetType="Label" x:Key="SectionHeader">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="TextColor" Value="{StaticResource TextDark}"/>
+    </Style>
+
+    <Style TargetType="Label" x:Key="CellLabel">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="TextColor" Value="{StaticResource TextDark}"/>
+    </Style>
+
+    <!-- BUTTONS -->
+    <Style TargetType="Button" x:Key="PrimaryButton">
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBlue}"/>
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="HeightRequest" Value="52"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+
+    <!-- CARD -->
+    <Style TargetType="Frame" x:Key="CardFrame">
+        <Setter Property="CornerRadius" Value="18"/>
+        <Setter Property="Padding" Value="20"/>
+        <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="BorderColor" Value="{StaticResource CardBorder}"/>
+        <Setter Property="HasShadow" Value="True"/>
+    </Style>
+
+</ResourceDictionary>
